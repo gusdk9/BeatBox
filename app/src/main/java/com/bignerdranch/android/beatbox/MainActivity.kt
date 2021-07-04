@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
 
         fun bind(sound: Sound) {
             binding.apply {
-                viewModel.sound = sound
+                viewModel?.sound = sound
                 // 레이아웃을 즉각적으로 변경하기 위함
                 executePendingBindings()
             }
